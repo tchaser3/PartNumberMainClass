@@ -44,7 +44,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindActivePartNumberReferenceByPartIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindActivePartNumberReferenceByPartIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindPartNumberMainByJDEPartNumberDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindPartNumberMainByJDEPartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindPartNumberMainByPartIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindPartNumberMainByPartIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindPartNumberMainByPartNumberDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindPartNumberMainByPartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindPartNumberReferenceByJDEPartNumberDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindPartNumberReferenceByJDEPartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindPartNumberReferenceByPartNumberDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindPartNumberReferenceByPartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPartNumberMainEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertPartNumberMainEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPartNumberReferenceEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertPartNumberReferenceEntry.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PartNumberMainClass.cs" />
+    <Compile Include="PartNumberMainDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberMainDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PartNumberReferenceDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -56,9 +101,118 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="UpdatePartNumberReferencePartID.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdatePartNumberReferencePartID.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePartNumberReferernceActiveEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdatePartNumberReferernceActiveEntry.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="FindActivePartNumberReferenceByPartIDDataSet.xsc">
+      <DependentUpon>FindActivePartNumberReferenceByPartIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindActivePartNumberReferenceByPartIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindActivePartNumberReferenceByPartIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindActivePartNumberReferenceByPartIDDataSet.xss">
+      <DependentUpon>FindActivePartNumberReferenceByPartIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberMainByJDEPartNumberDataSet.xsc">
+      <DependentUpon>FindPartNumberMainByJDEPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberMainByJDEPartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindPartNumberMainByJDEPartNumberDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindPartNumberMainByJDEPartNumberDataSet.xss">
+      <DependentUpon>FindPartNumberMainByJDEPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberMainByPartIDDataSet.xsc">
+      <DependentUpon>FindPartNumberMainByPartIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberMainByPartIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindPartNumberMainByPartIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindPartNumberMainByPartIDDataSet.xss">
+      <DependentUpon>FindPartNumberMainByPartIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberMainByPartNumberDataSet.xsc">
+      <DependentUpon>FindPartNumberMainByPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberMainByPartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindPartNumberMainByPartNumberDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindPartNumberMainByPartNumberDataSet.xss">
+      <DependentUpon>FindPartNumberMainByPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberReferenceByJDEPartNumberDataSet.xsc">
+      <DependentUpon>FindPartNumberReferenceByJDEPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberReferenceByJDEPartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindPartNumberReferenceByJDEPartNumberDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindPartNumberReferenceByJDEPartNumberDataSet.xss">
+      <DependentUpon>FindPartNumberReferenceByJDEPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberReferenceByPartNumberDataSet.xsc">
+      <DependentUpon>FindPartNumberReferenceByPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindPartNumberReferenceByPartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindPartNumberReferenceByPartNumberDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindPartNumberReferenceByPartNumberDataSet.xss">
+      <DependentUpon>FindPartNumberReferenceByPartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InsertPartNumberMainEntry.xsc">
+      <DependentUpon>InsertPartNumberMainEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertPartNumberMainEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertPartNumberMainEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertPartNumberMainEntry.xss">
+      <DependentUpon>InsertPartNumberMainEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertPartNumberReferenceEntry.xsc">
+      <DependentUpon>InsertPartNumberReferenceEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertPartNumberReferenceEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertPartNumberReferenceEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertPartNumberReferenceEntry.xss">
+      <DependentUpon>InsertPartNumberReferenceEntry.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberMainDataSet.xsc">
+      <DependentUpon>PartNumberMainDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberMainDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberMainDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberMainDataSet.xss">
+      <DependentUpon>PartNumberMainDataSet.xsd</DependentUpon>
+    </None>
     <None Include="PartNumberReferenceDataSet.xsc">
       <DependentUpon>PartNumberReferenceDataSet.xsd</DependentUpon>
     </None>
@@ -73,6 +227,28 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UpdatePartNumberReferencePartID.xsc">
+      <DependentUpon>UpdatePartNumberReferencePartID.xsd</DependentUpon>
+    </None>
+    <None Include="UpdatePartNumberReferencePartID.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdatePartNumberReferencePartID.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdatePartNumberReferencePartID.xss">
+      <DependentUpon>UpdatePartNumberReferencePartID.xsd</DependentUpon>
+    </None>
+    <None Include="UpdatePartNumberReferernceActiveEntry.xsc">
+      <DependentUpon>UpdatePartNumberReferernceActiveEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdatePartNumberReferernceActiveEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdatePartNumberReferernceActiveEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdatePartNumberReferernceActiveEntry.xss">
+      <DependentUpon>UpdatePartNumberReferernceActiveEntry.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
